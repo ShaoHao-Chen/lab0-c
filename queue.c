@@ -63,7 +63,7 @@ element_t *q_remove_head(struct list_head *head, char *sp, size_t bufsize)
     // If sp is provided, copy the string
     if (sp && element->value) {
         strncpy(sp, element->value, bufsize - 1);
-        sp[bufsize - 1] = '\0';  // Ensure null termination
+        sp[bufsize - 1] = '\0';
     }
 
     return element;  // Return the removed element
